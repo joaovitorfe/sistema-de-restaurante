@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $numero_pessoas = $_POST['numero_pessoas'];
     $telefone_cliente = $_POST['telefone_cliente'];
 
-    // Insere a reserva no banco
+    // Insere a reserva no banco de dados !!!
     $query = "INSERT INTO reservas (nome_cliente, data_reserva, numero_pessoas, telefone_cliente) 
               VALUES (?, ?, ?, ?)";
     $stmt = $pdo->prepare($query);
